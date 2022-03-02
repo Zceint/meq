@@ -7,7 +7,7 @@ export default function Header(props) {
     const city = searchRef.current.value;
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=c717ab506269416bab9231151220103&q=${city}&day=3&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=c717ab506269416bab9231151220103&q=${city}&day=3&aqi=no&alerts=no`
       )
       .then(
         (res) => {
